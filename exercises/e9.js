@@ -6,6 +6,12 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
+  var planetsN = data.planets.filter(function(n){
+    return n.name === "Earth";
+      }).find(function(n1){
+        return n1;
+      })
+      return planetsN;
 }
 
 

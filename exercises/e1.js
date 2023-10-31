@@ -6,9 +6,11 @@ import { data } from "../data/data";
 
 export function getPlanetNames(data) {
   // Your code goes here...
+  var planetN = data.planets.map(function(n){
+return n.name;
+  });
+ return planetN; 
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"

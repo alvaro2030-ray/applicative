@@ -6,6 +6,12 @@ import { data } from "../data/data";
 
 export function getOrbitalPeriodsSum(data) {
   // Your code goes here...
+  var asteroidN = data.asteroids.filter(function(n1){
+    return n1.orbitalPeriod;
+  }).reduce(function(acc, val){
+    return acc + val.orbitalPeriod;
+  }, 0)
+  return asteroidN;
 }
 
 

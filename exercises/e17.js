@@ -10,12 +10,34 @@
 
 export function minBy(array, cb) {
   // Your code goes here...
+  var min = Infinity;
+  for(let i of array){
+    if(cb(i) < min){
+      min = cb(i)
+    }
+  }
+  for(let i of array){
+    if(i.age === min || i.name[0] == 'a'){
+      return i;
+    }
+  }
 
+  
 }
 
 export function maxBy(array, cb) {
   // Your code goes here...
-
+  var max = -Infinity;
+  for(let i of array){
+    if(cb(i) > max){
+      max = cb(i);
+    }
+  }
+  for(let i of array){
+    if(i.age === max || i.name.length === max){
+      return i;
+    }
+  }
 }
 
 

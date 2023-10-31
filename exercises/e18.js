@@ -7,6 +7,9 @@
 export function getGreatestDiscoveryYear(data) {
   // Your code goes here...
   // feel free to import your `maxBy` or `minBy` methods from previous lessons
+  var asteroidsY = data.asteroids.map(function(aster){
+    return aster.discoveryYear;
+  })
 }
 
 // === TEST YOURSELF ===

@@ -6,6 +6,12 @@ import { data } from "../data/data";
 
 export function allPlanetsMoonsCount(data) {
   // Your code goes here...
+  var moonSum = data.planets.filter(function(n1){
+    return n1.moonsCount;
+  }).reduce(function(acc, val){
+    return acc + val.moonsCount;
+      }, 0);
+      return moonSum;
 }
 
 
