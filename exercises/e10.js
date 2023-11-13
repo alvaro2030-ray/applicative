@@ -6,16 +6,8 @@ import { data } from "../data/data";
 
 export function getAsteroidDataByName(data, asteroidName) {
   // Your code goes here...
-  var asteroidN = data.asteroids.filter(function(n){
-    return n.name === asteroidName;
-      }).find(function(n1){
-        return n1;
-      })
-      return asteroidN;
+  return data.asteroids.filter((asteroid) => asteroid.name === asteroidName).find((asteroid) => asteroid)
 }
-
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
 // If the test has all tests passed, switch to the next exercise file

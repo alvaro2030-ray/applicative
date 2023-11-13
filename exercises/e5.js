@@ -6,16 +6,8 @@ import { data } from "../data/data";
 
 export function getPlanetsWithMassValue(data, number) {
   // Your code goes here...
-  var planetsN = data.planets.filter(function(n){
-    return n.mass.massValue >= number;
-      }).map(function(n2){
-        return n2.name;
-      })
-     return planetsN; 
+  return data.planets.filter((planet) => planet.mass.massValue >= number).map((n2) => n2.name)
 }
-
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-5"
 // If the test has all tests passed, switch to the next exercise file

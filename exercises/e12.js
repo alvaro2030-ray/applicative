@@ -6,16 +6,8 @@ import { data } from "../data/data";
 
 export function allPlanetsMoonsCount(data) {
   // Your code goes here...
-  var moonSum = data.planets.filter(function(n1){
-    return n1.moonsCount;
-  }).reduce(function(acc, val){
-    return acc + val.moonsCount;
-      }, 0);
-      return moonSum;
+  return data.planets.filter((moon) => moon.moonsCount).reduce((acc, val) => acc + val.moonsCount, 0);
 }
-
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-12"
 // If the test has all tests passed, switch to the next exercise file

@@ -6,16 +6,8 @@ import { data } from "../data/data";
 
 export function getEarthData(data) {
   // Your code goes here...
-  var planetsN = data.planets.filter(function(n){
-    return n.name === "Earth";
-      }).find(function(n1){
-        return n1;
-      })
-      return planetsN;
+  return data.planets.filter((planet => planet.name === "Earth").find((planet) => planet))
 }
-
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-9"
 // If the test has all tests passed, switch to the next exercise file

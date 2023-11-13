@@ -6,16 +6,8 @@ import { data } from "../data/data";
 
 export function getPlanetsNamesWithMoons(data) {
   // Your code goes here...
-  var planetsN = data.planets.filter(function(n){
-    return n.moons;
-      }).map(function(n2){
-        return n2.name;
-      });
-     return planetsN; 
+  return data.planets.filter((planet) => planet.moons).map((planet) => planet.name);
 }
-
-
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"
 // If the test has all tests passed, switch to the next exercise file
