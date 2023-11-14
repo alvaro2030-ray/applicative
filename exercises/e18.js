@@ -22,10 +22,10 @@ export function getGreatestDiscoveryYear(data) {
   let repeatingYear = null;
 
   for(let year in yearCount){
-    if(yearCount[year] > 1 && year > 
+    if(yearCount[year] > 1 && yearCount[year] > 
 maxCount){
       maxCount = yearCount[year];
-      repeatingYear = year;
+      repeatingYear = parseInt(year);
     }
   }
     return repeatingYear
